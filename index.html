@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+	<!-- Bootstrap Link -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+
+	<!-- Google Font link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+	<title>Vincent Leuterio | Portfolio '23</title>
+
+</head>
+<body>
+
+	<!-- Landing Section Start -->
+    <section id="landing" class="container-fluid">
+    	
+    	<!-- Navbar Section Start -->
+    	<nav id="navigation-bar" class="navbar navbar-expand-lg navbar-light">
+	        <div class="container-fluid">
+	            <!-- Page Title on the Left -->
+	            <a class="navbar-brand" href="#">Vincent Leuterio</a>
+	            
+	            <!-- Hamburger Menu for Medium Screens -->
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	                <span class="navbar-toggler-icon"></span>
+	            </button>
+	            
+	            <!-- Navigation Links on the Right -->
+	            <div class="collapse navbar-collapse" id="navbarNav">
+	                <ul class="navbar-nav ml-auto">
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="#about-me">About Me</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="#projects">Projects</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="#tools">Tools</a>
+	                    </li>
+	                </ul>
+					<a class="nav-button" id="nav-button" href="#contact">
+						Connect with me
+					</a>
+	            </div>
+	        </div>
+	    </nav>
+	    <!-- Navbar Section Start -->
+
+    	<!-- Main Header Start -->
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center mx-auto">
+                <div id="header-title" class="col-lg-6">
+                    <h1>Hi, I'm Vincent!</h1>
+            		<h2>A Full-Stack Developer</h2>
+            		<div id="header-button" >
+            			<a id="portfolio-button" type="button" href="#projects">Check my portfolio</a>
+            			<a id="resume-button" type="button" href="https://www.google.com/drive/" target="_blank">Download resume</a>
+            		</div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/header-image.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <!-- Main Header End -->
+    </section>
+    <!-- Landing Section End -->
+
+
+	<!-- About Me Section -->
+	<section id="about-me" class="py-3">
+		<div class="container my-md-5">
+			<div class="row mb-3">
+				<div class="col-12">
+					<h2>Know me more</h2>
+					<p class="mt-3">
+						Hello! I'm Avin Leuterio. I wear multiple hats in the digital realm, serving as a versatile full-stack developer, a creative graphic designer, a skilled video editor, and a forward-thinking web designer. With a passion for crafting immersive digital experiences and a commitment to staying at the forefront of technology, I'm here to bring your ideas to life and create engaging and innovative solutions. Join me on this creative journey where design meets technology, and let's make the digital world more vibrant together.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-4 my-2">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">Design Team Lead</h4>
+							<p>Emapta Versatile Services</p>
+							<p>My role is to oversee and guide a team of talented designers in creating exceptional visual content and experiences. I provide strategic direction, mentorship, and feedback to ensure that our design projects align with our organization's goals and vision.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 my-2">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">Graphic Designer</h4>
+							<p>Sykes Asia Inc.</p>
+							<p>I craft visual elements that communicate messages, captivate audiences, and enhance brand identities. My role involves creating eye-catching designs for various mediums, including print and digital, to convey concepts and ideas effectively.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 my-2">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">Video Editor</h4>
+							<p>Provincial Governement of Bulacan</p>
+							<p>I specialize in transforming raw footage into captivating visual stories. I meticulously edit, enhance, and arrange video and audio elements to create seamless and engaging content. My role involves a keen eye for detail and proficiency in video editing software.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+
+	<!-- Projects Section -->
+	<section id="projects" class="d-flex justify-content-center align-items-center">
+		<div class="container my-5">
+			<h2 class="text-center mb-5">Portfolio Showcase: Unveiling My Creative Journey</h2>
+	        <ul class="nav justify-content-center" id="myTabs" role="tablist">
+	            <li class="nav-item">
+	                <button class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Web Design</button>
+	            </li>
+	            <li class="nav-item">
+	                <button class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Graphics Design</button>
+	            </li>
+	            <li class="nav-item">
+	                <button class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Branding</button>
+	            </li>
+	        </ul>
+	        <div class="tab-content" id="myTabsContent">
+	            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+	                <div class="text-center mt-3">
+	                	<h4>Web Design</h4>
+	                	<p>Browse my web design portfolio, where creativity and functionality converge to deliver captivating digital experiences.</p>	
+	                </div>
+	                <div class="container mt-3">
+					  <div class="row">
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/web-design/sample-1.jpg" class="img-fluid rounded">
+					    </div>
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/web-design/sample-2.jpg" class="img-fluid rounded">
+					    </div>
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/web-design/sample-3.jpg" class="img-fluid rounded">
+					    </div>
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/web-design/sample-4.jpg" class="img-fluid rounded">
+					    </div>
+					  </div>
+					</div>
+	            </div>
+	            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+	                <div class="text-center mt-3">
+	                	<h4>Graphics Design</h4>
+	                	<p>Delve into my graphic design portfolio, a visual journey that showcases a blend of creativity and precision in every pixel.</p>	
+	                </div>
+	                <div class="container mt-3">
+					  <div class="row">
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/graphic-design/sample-1.jpg" class="img-fluid rounded">
+					    </div>
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/graphic-design/sample-2.jpg" class="img-fluid rounded">
+					    </div>
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/graphic-design/sample-3.jpg" class="img-fluid rounded">
+					    </div>
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/graphic-design/sample-4.jpg" class="img-fluid rounded">
+					    </div>
+					  </div>
+					</div>
+	            </div>
+	            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+	                <div class="text-center mt-3">
+	                	<h4>Branding</h4>
+	                	<p>Discover my branding portfolio, a collection of distinctive visual identities that breathe life into brands and tell compelling stories.</p>	
+	                </div>
+	                <div class="container mt-3">
+					  <div class="row">
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/branding/sample-1.jpg" class="img-fluid rounded">
+					    </div>
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/branding/sample-2.jpg" class="img-fluid rounded">
+					    </div>
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/branding/sample-3.jpg" class="img-fluid rounded">
+					    </div>
+					    <div class="col-6 col-lg-3 p-2">
+					      <img src="images/branding/sample-4.jpg" class="img-fluid rounded">
+					    </div>
+					  </div>
+					</div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<!-- Tools Section -->
+	<section id="tools">
+		<div class="p-5">
+			<h2 class="text-center">Tools</h2>
+			<div class="row d-flex justify-content-center align-content-center">
+				<div class="col-10 col-lg-6 rounded">
+					<div class="row">
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/html.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/css.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/bootstrap.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/css.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/css.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/figma.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/photoshop.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/illustrator.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/css.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/css.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/css.png" class="img-fluid">
+						</div>
+						<div class="col-4 col-md-2 p-2">
+						    <img src="images/tools/css.png" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Contact Section -->
+	<section id="contact">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 p-5">
+					<h2>Let's talk</h2>
+					<p>Feel free to contact and I will get back to you as soon as I can.</p>
+					<div class="d-flex flex-wrap">
+				        <a href="https://www.facebook.com/" target="_blank">
+				            <img width="50" src="images/social/facebook.png" class="p-2">
+				        </a>
+				        <a href="https://www.linkedin.com/" target="_blank">
+				            <img width="50" src="images/social/linkedin.png" class="p-2">
+				        </a>
+				        <a href="https://www.behance.net/" target="_blank">
+				            <img width="50" src="images/social/behance.png" class="p-2">
+				        </a>
+				        <a href="https://github.com/" target="_blank">
+				            <img width="50" src="images/social/github.png" class="p-2">
+				        </a>
+				    </div>
+				</div>
+				<div id="contact-form" class="col-lg-6 p-5">
+					<form class="row g-3">
+					  <div class="my-2 col-12">
+					    <input type="text" class="form-control" placeholder="Your name" id="name" required>
+					  </div>
+					  <div class="my-2 col-md-6">
+					    <input type="email" class="form-control" placeholder="Email address" id="emailAddress" required>
+					  </div>
+					  <div class="my-2 col-md-6">
+					    <input type="tel" class="form-control" placeholder="Phone number" id="phoneNumber" required>
+					  </div>
+					  <div class="my-2 col-12">
+					    <textarea class="form-control" placeholder="Leave a message" id="textArea" rows="3"></textarea>
+					  </div>
+					  <div class="col-12">
+					    <button type="submit" class="btn btn-primary" id="contact-button">Get in touch</button>
+					  </div>
+					</form>
+				</div>
+				
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Footer Section -->
+    <footer class="py-3 text-center d-flex justify-content-center align-items-center">	
+        <div>
+        	<p>© Avin Leuterio | 2023</p>
+        </div>
+    </footer>
+
+
+
+	<!-- Bootstrap JQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>

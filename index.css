@@ -1,0 +1,226 @@
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Font*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*Navigation Bar*/
+#navigation-bar {
+	min-height: 10vh;
+}
+
+.navbar-brand {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.nav-item {
+	padding left: 2rem;
+	padding-right: 2rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#nav-button {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #7934BF;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+/*Header*/
+
+#landing {
+    min-height: 100vh;
+	background-color: #94CEF2;
+}
+
+#header-title h1 {
+	font-family: 'Dela Gothic One', cursive;
+	font-size: 72px;
+}
+
+h2, h3 {
+	font-family: 'Dela Gothic One', cursive;
+	font-size: 36px;
+}
+
+h4, h5 {
+	font-family: 'Dela Gothic One', cursive;
+	font-size: 28px;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+    font-weight: 300;
+}
+
+#header-button {
+	margin-top: 2rem;
+}
+
+#portfolio-button {
+	margin-right: 1rem;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #fdf2fd;
+	color: #7934BF;
+	border: 1px solid #7934BF;
+	border-radius: 8px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+#resume-button {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #fdf2fd;
+	color: #7934BF;
+	border: 1px solid #7934BF;
+	border-radius: 8px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+.banner-image {
+	max-width: 100%;
+}
+
+/*About Me Section*/
+#about-me {
+    display: flex;
+	background-color: #f2fbff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.card-body {
+	background-color: #f2fbff;
+	border: 3px solid #5FAAD9;
+	border-radius: 8px;
+}
+
+
+/*Projects*/
+#projects {	
+    min-height: 80vh;
+    background-color: #fdf2fd;
+}
+
+#myTabs button {
+	margin-right: 1rem;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #f2fbff;
+	color: #5FAAD9;
+	border: 1px solid #5FAAD9;
+	border-radius: 8px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/*Tools*/
+#tools {
+	min-height: 50vh;
+	background-color: #fff3eb;
+}
+
+
+/*Contact Form*/
+#contact {
+	background-color: #94CEF2;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+#contact h2 {
+	font-family: 'Dela Gothic One', cursive;
+	font-size: 36px;
+}
+
+#contact p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+#name, #emailAddress, #phoneNumber, #textArea {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    background-color: transparent;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+#name::placeholder, #emailAddress::placeholder, #phoneNumber::placeholder, #textArea::placeholder {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+#contact-button {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #7934BF;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+footer {
+	background-color: #5FAAD9;
+}
