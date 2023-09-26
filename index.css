@@ -12,6 +12,10 @@ body {
     font-weight: 300;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*Navigation Bar*/
 #navigation-bar {
 	min-height: 10vh;
@@ -49,6 +53,7 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-decoration: none;
+
 }
 
 /*Header*/
@@ -60,7 +65,7 @@ body {
 
 #header-title h1 {
 	font-family: 'Dela Gothic One', cursive;
-	font-size: 72px;
+	font-size: 62px;
 }
 
 h2, h3 {
@@ -80,11 +85,13 @@ p {
 }
 
 #header-button {
-	margin-top: 2rem;
+	padding-top: 2rem;
+	display: inline-block;
 }
 
 #portfolio-button {
 	margin-right: 1rem;
+	margin-bottom: 2rem;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;
@@ -145,8 +152,11 @@ p {
     background-color: #fdf2fd;
 }
 
+#myTabs li {
+	display: inline;
+}
+
 #myTabs button {
-	margin-right: 1rem;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;
@@ -164,7 +174,6 @@ p {
 
 /*Tools*/
 #tools {
-	min-height: 50vh;
 	background-color: #fff3eb;
 }
 
