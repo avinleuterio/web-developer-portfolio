@@ -138,9 +138,9 @@
 	            </li>
 	        </ul>
 
-	        <div class="tab-content" id="myTabsContent">
+	        <div class="tab-content mt-5 px-lg-5" id="myTabsContent">
 	            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-	                <div class="text-center mt-3">
+	                <div class="text-center">
 	                	<h4>Web Design</h4>
 	                	<p>Browse my web design portfolio, where creativity and functionality converge to deliver captivating digital experiences.</p>	
 	                </div>
@@ -162,7 +162,7 @@
 					</div>
 	            </div>
 	            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
-	                <div class="text-center mt-3">
+	                <div class="text-center">
 	                	<h4>Graphics Design</h4>
 	                	<p>Delve into my graphic design portfolio, a visual journey that showcases a blend of creativity and precision in every pixel.</p>	
 	                </div>
@@ -184,7 +184,7 @@
 					</div>
 	            </div>
 	            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
-	                <div class="text-center mt-3">
+	                <div class="text-center">
 	                	<h4>Branding</h4>
 	                	<p>Discover my branding portfolio, a collection of distinctive visual identities that breathe life into brands and tell compelling stories.</p>	
 	                </div>
@@ -282,32 +282,81 @@
 				    </div>
 				</div>
 				<div id="contact-form" class="col-lg-6 p-5">
-					<form class="row g-3">
-					  <div class="my-2 col-12">
-					    <input type="text" class="form-control" placeholder="Your name" id="name" required>
-					  </div>
-					  <div class="my-2 col-md-6">
-					    <input type="email" class="form-control" placeholder="Email address" id="emailAddress" required>
-					  </div>
-					  <div class="my-2 col-md-6">
-					    <input type="tel" class="form-control" placeholder="Phone number" id="phoneNumber" required>
-					  </div>
-					  <div class="my-2 col-12">
-					    <textarea class="form-control" placeholder="Leave a message" id="textArea" rows="3"></textarea>
-					  </div>
-					  <div class="col-12">
-					    <button type="submit" class="btn btn-primary" id="contact-button">Get in touch</button>
-					  </div>
-					</form>
+				  <form class="row g-3" id="contactForm">
+				    <div class="my-2 col-12">
+				      <input type="text" class="form-control" placeholder="Your name" id="name" required>
+				      <div class="invalid-feedback">Please enter your name.</div>
+				    </div>
+				    <div class="my-2 col-md-6">
+				      <input type="email" class="form-control" placeholder="Email address" id="emailAddress" required>
+				      <div class="invalid-feedback">Please enter a valid email address.</div>
+				    </div>
+				    <div class="my-2 col-md-6">
+				      <input type="tel" class="form-control" placeholder="Phone number" id="phoneNumber" required>
+				      <div class="invalid-feedback">Please enter a valid phone number.</div>
+				    </div>
+				    <div class="my-2 col-12">
+				      <textarea class="form-control" placeholder="Leave a message" id="textArea" rows="3"></textarea>
+				    </div>
+				    <div class="col-12 pt-2">
+				      <button type="button" class="btn btn-primary" id="contact-button">
+				        Get in touch
+				      </button>
+				    </div>
+				  </form>
 				</div>
-				
-			</div>
 
+				<!-- Modal Start -->
+				<div class="modal fade" id="modalPop" tabindex="-1" aria-labelledby="modalPopLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <button id="modal-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				        <div class="my-5">
+					      	<h5 class="modal-title text-center py-2">Thank you!</h5>
+					        <p class="text-center">Your message has been sent successfully. We'll be in touch shortly.</p>			
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Modal End -->
+
+				<!-- Modal Script Start -->
+				<script>
+				  document.addEventListener("DOMContentLoaded", function () {
+				    const contactButton = document.getElementById("contact-button");
+				    const contactForm = document.getElementById("contactForm");
+
+				    contactButton.addEventListener("click", function () {
+				      if (contactForm.checkValidity()) {
+				        // All form fields are filled out correctly, hide any displayed error messages
+				        const errorMessages = document.querySelectorAll(".invalid-feedback");
+				        errorMessages.forEach(function (errorMessage) {
+				          errorMessage.style.display = "none";
+				        });
+
+				        // Show the modal
+				        $("#modalPop").modal("show");
+				      } else {
+				        // Form fields are not filled out correctly, display error messages
+				        const errorMessages = document.querySelectorAll(".invalid-feedback");
+				        errorMessages.forEach(function (errorMessage) {
+				          errorMessage.style.display = "block";
+				        });
+				      }
+				    });
+				  });
+				</script>
+				<!-- Modal Script Start -->
+			</div>
 		</div>
 	</section>
 
 	<!-- Footer Section -->
-    <footer class="py-3 text-center d-flex justify-content-center align-items-center">	
+    <footer class="text-center p-2">	
         <div>
         	<p>© Avin Leuterio | 2023</p>
         </div>

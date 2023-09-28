@@ -45,7 +45,7 @@ html {
 	padding-bottom: 10px;
 	background-color: #7934BF;
 	color: white;
-	border: none;
+	border: 0;
 	border-radius: 8px;
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
@@ -139,6 +139,10 @@ p {
     min-height: 60vh;
 }
 
+#about-me .card {
+	border: 0;
+}
+
 .card-body {
 	background-color: #f2fbff;
 	border: 3px solid #5FAAD9;
@@ -148,7 +152,7 @@ p {
 
 /*Projects*/
 #projects {	
-    min-height: 80vh;
+    min-height: 100vh;
     background-color: #fdf2fd;
 }
 
@@ -174,13 +178,13 @@ p {
 
 /*Tools*/
 #tools {
-	background-color: #fff3eb;
+	background-color: #F9F7E8;
 }
 
 
 /*Contact Form*/
 #contact {
-	background-color: #94CEF2;
+	background-color: #E3F6FF ;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
@@ -197,7 +201,7 @@ p {
 }
 
 #name, #emailAddress, #phoneNumber, #textArea {
-    border: none;
+    border: 0;
     border-bottom: 1px solid black;
     border-radius: 0;
     background-color: transparent;
@@ -214,6 +218,13 @@ p {
 	font-weight: 400;
 }
 
+#contact-form .invalid-feedback {
+	color: red;
+    font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+
 #contact-button {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -221,13 +232,26 @@ p {
 	padding-bottom: 10px;
 	background-color: #7934BF;
 	color: white;
-	border: none;
+	border: 0;
 	border-radius: 8px;
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+}
+
+/*Modal*/
+.modal-body {
+	background-color: #5FAAD9;
+	color: #FFFFFF;
+}
+
+.modal-dialog-centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
 footer {
